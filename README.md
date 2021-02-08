@@ -1,4 +1,4 @@
-# examination-management-system
+# Billing Application
 [![Build Status](https://img.shields.io/badge/build-deployed-success)](https://billing-app.netlify.app/)
 # Overview
 This is a billing application which provides many features .
