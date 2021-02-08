@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sidebar__before__login {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0px 20px;
+}
+
+.auth {
+  margin-right: 10px;
+}
+.sidebar__after__login {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 10px 20px;
+}
+
+.home {
+  height: 578px;
+  background-image: url("./components//Common/Billing.png");
+  background-size: cover;
+}
+.home_text {
+  width: 900px;
+  position: absolute;
+  top: 90px;
+  left: 300px;
+  color: black;
+  letter-spacing: 8px;
+}
+
+.home_text h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  font-style: italic;
+  line-height: 0.8;
+  margin: 0;
+
+  background-image: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ffc75f,
+    #f9f871,
+    #c0eb34,
+    #68eb34,
+    #34eba2,
+    #349ceb,
+    #3437eb,
+    #eb34d0
+  );
+  background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: bg-animation 10s infinite alternate;
+}
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.landing_page {
+  height: 100%;
+}
+.dashboard {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dashboard .card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.dashboard .card .circle {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: #000;
+  clip-path: circle(250px at center 0);
+  text-align: center;
+}
+.dashboard .card .circle h2 {
+  color: #fff;
+  font-size: 4.2em;
+  padding: 20px 0;
+  font-weight: 900;
+}
+.dashboard .card .text {
+  position: absolute;
+  bottom: 10px;
+  padding: 30px 40px;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.dashboard .card:nth-child(1) .circle {
+  background: #bb02ff;
+}
+.dashboard .card:nth-child(2) .circle {
+  background: #da2268;
+}
+.dashboard .card:nth-child(3) .circle {
+  background: #11baa3;
+}
+.dashboard .card:nth-child(3) .text {
+  padding-left: 90px;
+}
+.dashboard .card:nth-child(4) .text {
+  padding-left: 90px;
+}
+.dashboard .card:nth-child(4) .circle {
+  background: #11baa3;
+}
+.dashboard .card:hover {
+  transform: scale(1.1);
+}
+.last_five {
+  display: grid;
+  grid-template: auto/repeat(5, 1fr);
+  gap: 16px;
+  margin: 20px;
+  margin-right: 50px;
+}
+.last_five2 {
+  margin: 20px;
+  display: grid;
+  grid-template: auto/repeat(4, 1fr);
+}
+.last_title {
+  margin: 20px;
+  font-style: 2.5rem;
+  text-align: center;
+}
+
+/* Customer */
+
+.customer_container,
+.product_container {
+  height: 100vh;
+  display: grid;
+  grid-template: 0.1fr 0.15fr 1fr/1fr;
+}
+
+.customer_container_title,
+.product_container_title {
+  font-size: 2.5rem;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.search_customer {
+  position: absolute;
+  margin-top: 10px;
+  right: 20px;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  height: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  padding-left: 5px;
+  box-shadow: 5px 5px 10px;
+}
+.form_container {
+  padding: 5px 20px;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.input {
+  margin: 10px;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  height: 2.5rem;
+  border-radius: 15px;
+  padding-left: 5px;
+  box-shadow: 5px 5px 20px;
+}
+.btn {
+  margin: 10px;
+  font-size: 1.5rem;
+  outline: none;
+  cursor: pointer;
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  box-shadow: 5px 5px 20px;
+}
+.add:hover {
+  background: green;
+}
+.cancel:hover {
+  background: red;
+}
+
+.display_customer_card,
+.display_product_card {
+  height: 100%;
+  width: 100%;
+  padding: 5px 20px;
+  position: relative;
+  background: #fff;
+  box-shadow: 30px 20px 50px rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+
+.display_customer_card,
+.display_product_card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  gap: 24px;
+}
+
+.product_name,
+.user_name {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+/* bll */
+.bill_container {
+  display: grid;
+  grid-template: 0.1fr 0.2fr 1fr/1fr;
+  grid-gap: 10px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  /* margin: 5px; */
+}
+.date_picker {
+  margin: 5px;
+  padding-left: 10px;
+}
+.date {
+  height: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+.bill_info {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  grid-gap: 3px;
+  margin: -15px 10px;
+}
+
+.bill_dis,
+.bill_gen {
+  width: 100%;
+  height: 480px;
+  overflow-y: auto;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.5);
+}
+.select {
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  background-color: lightgrey;
+  font-size: 1rem;
+}
+.select_product {
+  display: flex;
+}
+.quant {
+  display: flex;
+}
+
+.quant .butn {
+  font-size: 10px;
+  margin: 10px 10px;
+  height: 1.8rem;
+  width: 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.quant-text {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+.showproduct {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.showproduct td,
+.showproduct th,
+.show_bill td,
+.show_bill th,
+.bill_card td,
+.bill_card th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.showproduct tr:nth-child(even),
+.show_bill tr:nth-child(even),
+.bill_card tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.showproduct tr:hover,
+.show_bill tr:hover,
+.bill_card tr:hover {
+  background-color: #ddd;
+}
+
+.showproduct th,
+.show_bill th,
+.bill_card th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+.show_bill {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.invoice_title {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.admin_sign {
+  font-family: "Dancing Script";
+}
+.show_bill .invoice_header,
+.bill_card .invoice_header {
+  letter-spacing: 1px;
+  margin: 5px 5px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.invoice_table .bill_table,
+.showproduct table {
+  table-layout: auto;
+  width: 100%;
+}
+.invoice_sign {
+  position: relative;
+  bottom: 20px;
+}
+.invoice_total {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  margin-top: 10px;
+}
+
+.gen_butn {
+  font-size: 1.2rem;
+  padding: 0.6em 1.5em;
+  cursor: pointer;
+  margin: 10px 10px;
+}
+.gen_butn:hover {
+  transform: scale(1.1);
+  transition: 3s;
+  background: green;
+}
+.p_text {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.all_bill {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  overflow-y: auto;
+  grid-template: 0.1fr 1fr /1fr;
+}
+.all_bill_card {
+  display: grid;
+  grid-template: auto/repeat(4, 1fr);
+  grid-gap: 5px;
+}
+.bill_card {
+  position: relative;
+  width: 330px;
+  height: 270px;
+  background: #fff;
+  font-size: 1rem;
+  border-radius: 20px;
+  overflow-y: auto;
+  box-shadow: 0px 35px 35px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  text-align: center;
+  margin: 10px 5px;
+}
+
+.invoice_sign_bill {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem;
+}
+.all_bill_header {
+  letter-spacing: 2px;
+  text-align: center;
+  background: gray;
+  color: white;
+  font-size: 1rem;
+}
+.back_btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 30px;
+  align-items: center;
+}
+.all_bill_header2 {
+  letter-spacing: 2px;
+  text-align: center;
+  color: #000;
+  font-size: 1rem;
+  padding-top: 5px;
+  font-family: sans-serif;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.delete_bill:hover {
+  cursor: pointer;
+  color: red;
+  transform: scale(1.1);
+}
+.pdf_gen {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
