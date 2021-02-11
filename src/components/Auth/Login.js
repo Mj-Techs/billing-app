@@ -20,12 +20,7 @@ const Login = (props) => {
   const handleChange = (e) => {
     setLoginData({ ...loginData, [e.target.name]: e.target.value });
   };
-  const handleCancelButton = () => {
-    setLoginData({
-      email: "",
-      password: "",
-    });
-  };
+
   const runValidation = () => {
     // email validation
     if (validator.isEmpty(loginData.email)) {
@@ -83,10 +78,7 @@ const Login = (props) => {
               helperText={loginError?.password}
               type="password"
             />
-            <FormButton type="submit">Register</FormButton>
-            <FormButton primary onClick={handleCancelButton}>
-              Cancel
-            </FormButton>
+            <FormButton type="submit">Login</FormButton>
           </form>
         </Paper>
       </Grid>
