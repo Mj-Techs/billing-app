@@ -168,7 +168,7 @@ const Register = (props) => {
               </p>
             )}
             <FormButton type="submit">Register</FormButton>
-            <FormButton primary onClick={handleCancelButton}>
+            <FormButton type="button" primary onClick={handleCancelButton}>
               Cancel
             </FormButton>
           </form>
