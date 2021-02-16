@@ -93,7 +93,7 @@ const Register = (props) => {
     }
   };
   return (
-    <div>
+    <div className="register">
       <Grid>
         <Paper elevation={20} style={paperStyle}>
           <Grid align="center">
