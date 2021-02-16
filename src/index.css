@@ -27,8 +27,8 @@
 }
 
 .home {
-  height: 578px;
-  background-image: url("./components//Common/Billing.png");
+  height: 100%;
+  background-image: url("./components/Common/landingimage.svg");
   background-size: cover;
 }
 .home_text {
@@ -76,7 +76,17 @@
     background-position: right;
   }
 }
-
+.register {
+  height: 94.8%;
+  background-image: url("./components/Common/landingimage.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login {
+  height: 87.9%;
+  background-image: url("./components/Common/landingimage.svg");
+  background-size: cover;
+}
 .landing_page {
   height: 100%;
 }

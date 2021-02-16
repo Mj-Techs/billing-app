@@ -48,7 +48,7 @@ const Login = (props) => {
     }
   };
   return (
-    <div>
+    <div className="login">
       <Grid>
         <Paper elevation={20} style={paperStyle}>
           <Grid align="center">

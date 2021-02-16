@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+
 export const Wrapper = styled.div`
   height: 100vh;
   width: 100vw;
@@ -7,6 +8,7 @@ export const Wrapper = styled.div`
   grid-template: 0.1fr 1fr/ 1fr;
   background-image: linear-gradient(to right top, white, white);
   background-size: cover;
+  backdrop-filter: blur;
   font-family: sans-serif;
   font-weight: 700;
   overflow-x: hidden;
